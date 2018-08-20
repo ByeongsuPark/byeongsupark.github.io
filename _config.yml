@@ -1,0 +1,28 @@
+# Permalinks
+permalink:      /:year-:month-:day/:title
+
+# Setup
+title:          Byeongsu Park
+baseurl:        ""
+url:            ""
+
+# Assets
+sass:
+  sass_dir:     _sass
+  style:        :compressed
+
+# Build settings
+markdown:       kramdown
+
+# About
+author:
+  name:         Byeongsu Park
+  url:          
+  email:        byeongsu@soongsil.ac.kr 
+  github:       ByeongsuPark
+  twitter:      none
+
+# Custom vars
+version:        3.4.1
+github:
+  repo:        
