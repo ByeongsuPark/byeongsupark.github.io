@@ -1,14 +1,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  {% if jekyll.environment == 'production' %}
+  {% include ga.html %}
+  {% endif }
   <title>{{ page.title }}</title>
     
 <!-- Post info -->
 
   <meta property="og:site_name" content="{{ site.title }}">
 
-    <meta property="fb:app_id"          content="1607605225977118" />
     <meta property="og:type"            content="article" /> 
     <meta property="og:url"             content="{{ site.url }}{{ page.url }}" />
     
@@ -19,12 +20,10 @@
     <!-- title -->
     <meta property="og:title" content="{% if page.url == '/' %}{{ page.subtitle}}{% else %}{{ page.title }}{% endif %}">
     
-    <meta name="twitter:title" content="{% if page.url == '/' %}{{ page.subtitle}}{% else %}{{ page.title }}{% endif %}">
     
     <!-- description -->
     <meta property="og:description" content="{% if page.main == true %}{{ page.description }}{% else %}{{ page.content | truncatewords: 30 | strip_html }}{% endif %}"/>
     
-    <meta name="twitter:description" content="{% if page.main == true %}{{ page.description }}{% else %}{{ page.content | truncatewords: 30 | strip_html }}{% endif %}">
     
   <!-- CSS -->
   <link rel="stylesheet" href="{{ site.baseurl }}/styles.css">
