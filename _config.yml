@@ -3,7 +3,7 @@ permalink:      /:year-:month-:day/:title
 
 # Setup
 title:          Byeongsu Park
-baseurl:        ""
+baseurl:        "https://byeongsupark.github.io"
 url:            ""
 
 # Assets
@@ -26,3 +26,6 @@ author:
 version:        3.4.1
 github:
   repo:        
+
+plugins:
+        - jekyll-sitemap
