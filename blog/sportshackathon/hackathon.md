@@ -8,6 +8,7 @@ text: true
 author: "Byeongsu Park"
 header-img : "img/img.jpg"
 post-header: true
+comments: true
 order: 1
 ---
 
@@ -21,13 +22,11 @@ order: 1
 
 # 사전행사
 
- ![사전행사 일정](https://lh3.googleusercontent.com/oYOmOLBh0ztudpOorRemAQUzT0tcS7lqBub3RVQkLsi2A7x7mmPVRh7Imv5XjawBWIThnmXcUEqLbg "사전행사")
-
+![사전행사 일정](https://lh3.googleusercontent.com/oYOmOLBh0ztudpOorRemAQUzT0tcS7lqBub3RVQkLsi2A7x7mmPVRh7Imv5XjawBWIThnmXcUEqLbg)
 사전행사는 크게 팀빌딩과 도박 교육 일정으로 이루어져 있었어요.  
 강남구 대치동에 있는 쥬비스 타워에서 진행되었구요.
 
-![enter image description here](https://lh3.googleusercontent.com/ddxFJaZ9vYVPCrU5f-CMH3-i-ILvnrg_6B5YmiP6nKaENHv7_9amMUoUCe-Qi0jZ8OpnCLNpBkBB "사전교육 쥬비스타워")
-
+![사전교육](https://lh3.googleusercontent.com/ddxFJaZ9vYVPCrU5f-CMH3-i-ILvnrg_6B5YmiP6nKaENHv7_9amMUoUCe-Qi0jZ8OpnCLNpBkBB "사전교육 쥬비스타워")
 
 ![
 ](https://lh3.googleusercontent.com/tzMoxbz0HPO_3-SPXVGhZGVZ-TP1hMCVuZBKr4KtvIIW0pdefdQywJss04Fm62IHeqC6J5eD7yAT "waiting")
@@ -45,7 +44,6 @@ order: 1
 심사기준이 어떻게 되는지, 멘토분들로 어떤 분들이 오시는지에 대해 상세한 설명을 들었습니다.
 
 ![enter image description here](https://lh3.googleusercontent.com/vOB0sREDvkvnyRutGYcolLFcevD1GO_WAZzw-OBgnMN_4H1w5wXEALCAaAAa-JnlIfkjHW5z618c)
-
 불법 스포츠도박에 대한 강의도 들었구요.
 
 강의를 듣고 마지막에 든 생각은 "아이디어가 팀들 대부분 비슷할 것 같다" 였습니다.  
@@ -61,12 +59,9 @@ order: 1
 
 ~~*집이 화성인 저에게 강서는 멀고 험한 길...*~~  
 넉넉하게 3시간 잡아서 새벽에 출발했습니다.
-
 ![
 ](https://lh3.googleusercontent.com/GR7Fvfg61tAqIlQ6_NHhd5_0WQEy92WPbniHKqbSmOMjQYN5GYxewFE7byoyGtXIT_uknhi3dZLH "abroad")
-
 근처 역에서 내린 후에는 안내 배너 덕분에 길 안 잃고 편하게 갔던 것 같습니다.
-
 
 ![
 ](https://lh3.googleusercontent.com/oPISgyIoTUCPGKORd26mgz68pPX7LrDSXGkC-YWEiF_aRY2_pHvnPrqSZEqEEK5qZ3c5FprRlkWI "welcome_kit")
@@ -77,12 +72,9 @@ order: 1
 주최측의 세심한 배려가 돋보이는 부분이었습니다.
 
 ![enter image description here](https://lh3.googleusercontent.com/yfT-BUR3T1SIYkscGBoAF-OSbPHcaHidZxKRo268pK73CEljHvTgtfSE4uO5KtT1_5CDYCzigg6p)
-
 그렇게 행사가 시작이 되고...
 
-
 ![bap](https://lh3.googleusercontent.com/mW_tkWU5bdRj8gH3YhlcuP4fFBd0FwRmLYmg2NPkLN-m7nktl_9UUvQmKuC-an6tbLYq1kd7Aa_T "dinner")
-
 주최 측에서 준비해주신 맛있는 밥도 먹고
 쭈욱 달렸네요.
 
@@ -104,8 +96,9 @@ order: 1
 
 저희는 아래의 아이디어로 발표를 했습니다.
 
+<center>
 <iframe src="//www.slideshare.net/slideshow/embed_code/key/sLaUwQtCkOeyQY" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/ps3011/ss-122362448" title="불법 스포츠 도박 근절 해커톤" target="_blank">불법 스포츠 도박 근절 해커톤</a> </strong> from <strong><a href="https://www.slideshare.net/ps3011" target="_blank">ps3011</a></strong> </div>
-
+</center>
   
 
     
@@ -118,7 +111,6 @@ order: 1
 
 그렇게 발표와 심사가 다 끝나고...
 수상팀을 부르는데....
-
 
 ![상](https://lh3.googleusercontent.com/bhAIWYYbKdLliyDjV77-Zo8-iauRWtMQdBeNIIMRPDCfSsmEyNML9aoXmRxDiZGy0GxBLYQCm0vL0g "award")  
 (왼쪽이 저, 오른쪽이 당시 팀원이셨던 민영님입니다.)  
