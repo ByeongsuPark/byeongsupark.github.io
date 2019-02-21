@@ -27,6 +27,9 @@
         </div>
       </nav>
       
+    {% if page.post-header == true %}
+    	{% include post-header.html %}
+    {% endif %}
     
     {% if page.project-header == true %}
         {% include project-header.html %}
