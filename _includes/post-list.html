@@ -1,3 +1,4 @@
+{% if site.active_lang == page.lang %}
 <li class="catalogue-item">
     <a href="{{ page.url | prepend: site.baseurl }}" >
         <p class="catalogue-type">
@@ -21,3 +22,4 @@
         </div>
     </a>
 </li>    
+{% endif %}

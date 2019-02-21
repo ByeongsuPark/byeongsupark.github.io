@@ -1,10 +1,10 @@
 ---
 layout: default
-lang: ko
+lang: en
 permalink: /
 title: "Byeongsu Park"
 main: true
-subtitle: Byeongsu Park at SSU 
+subtitle: Just another day
 description: boop!
 ---
 <div class="intro-animation">
@@ -12,7 +12,7 @@ description: boop!
     <h1 class="intro">
     I'm Byeongsu Park,
     </h1>
-    <h2 class="intro">'박병수'입니다.</h2>
+    <h2 class="intro">:D</h2>
 </section>
 </div>
 

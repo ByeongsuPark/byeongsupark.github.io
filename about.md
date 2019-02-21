@@ -1,10 +1,11 @@
 ---
 layout: post
+lang: ko
+permalink: /about
 title: "Byeongsu Park"
 subtitle: "박병수"
 type: "About"
 author: "Byeongsu Park"
-permalink: /about/
 post-header: true
 header-img: img/about.jpg
 ---

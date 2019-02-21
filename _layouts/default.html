@@ -12,18 +12,21 @@
                     <a href="{{ '' | prepend: site.baseurl }}/" {% if current[1] == "about" or current[1] == "blog" %} class="normal" {% endif %} class="active">Work</a>
                 </li>
                 <li class="transition">
-                    <a href="{{ '/blog' | prepend: site.baseurl }}" {% if current[1] == "blog" %} class="active"{% endif %} >Blog</a>
+			<a href="{{ '/blog' | prepend: site.baseurl }}" {% if current[1] == "blog" %} class="active"{% endif %} >Blog</a>
                 </li>
                 <li class="transition">
                     <a href="{{ '/about' | prepend: site.baseurl }}" {% if current[1] == "about" %} class="active"{% endif %} >About</a>
                 </li>
+
+		{% for tongue in site.languages %}
+                	<li class="lang" style="float: right;">
+			|  	<a style="{% if tongue == site.active_lang %}font-weight: bold;{% endif %}text-align:center;" href="{% if tongue == site.default_lang %} {{site.baseurl}}{{page.url}} {% else %} {{site.baseurl}}/{{ tongue }}{{page.url}} {% endif %}">{{ tongue }}</a>    
+			<br> </li>
+	      	{% endfor %}
             </ul>
         </div>
       </nav>
-    
-    {% if page.post-header == true %}
-        {% include post-header.html %}
-    {% endif %}
+      
     
     {% if page.project-header == true %}
         {% include project-header.html %}
