@@ -23,6 +23,9 @@
     
     <!-- description -->
     <meta property="og:description" content="{% if page.main == true %}{{ page.description }}{% else %}{{ page.content | truncatewords: 30 | strip_html }}{% endif %}"/>
+
+    <!-- SEO for Polyglot -->
+    {% I18n_Headers %}
     
     
   <!-- CSS -->
