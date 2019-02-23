@@ -31,7 +31,7 @@ github:
 languages: ["ko", "en"]
 default_lang: "ko"
 exclude_from_localization: ["javascript","images","css"]
-parallel_localization: false
+parallel_localization: true
 
 plugins:
 #       - jekyll-sitemap

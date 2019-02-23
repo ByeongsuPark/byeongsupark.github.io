@@ -1,10 +1,11 @@
 ---
 layout: post
 lang: ko
-permalink: /blog/google-ml-studyjam/machine-learning-stduyjam
+permalink: /blog/google-ml-studyjam/machine-learning-studyjam
+draft: false
 title:  "2019 구글 머신러닝 스터디잼"
 subtitle: "신청 및 후기"
-type: "study"
+type: "Study"
 blog: true
 text: true
 author: "Byeongsu Park"
