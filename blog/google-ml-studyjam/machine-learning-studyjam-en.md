@@ -6,7 +6,7 @@ draft: true
 title:  "2019 Google Machine Learning Study Jam"
 subtitle: "Registration and Review"
 type: "Study"
-blog: false
+blog: true
 text: true
 author: "Byeongsu Park"
 header-img : "img/google_ml_study_poster.png"

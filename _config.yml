@@ -34,5 +34,5 @@ exclude_from_localization: ["javascript","images","css"]
 parallel_localization: false
 
 plugins:
-        - jekyll-sitemap
+#       - jekyll-sitemap
         - jekyll-polyglot
