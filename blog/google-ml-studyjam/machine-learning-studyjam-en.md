@@ -2,7 +2,7 @@
 layout: post
 lang: en 
 permalink: /blog/google-ml-studyjam/machine-learning-studyjam
-draft: true
+draft: false
 title:  "2019 Google Machine Learning Study Jam"
 subtitle: "Registration and Review"
 type: "Study"
@@ -69,6 +69,7 @@ Today was the first day of study jam.
    <br>
    Group members will receive a t-shirt, sticker.  
    And Group leaders will additionally receive a hoodie.  
+   <br>
 
 
 
