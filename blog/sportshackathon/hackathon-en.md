@@ -1,6 +1,6 @@
 ---
 layout: post
-lang: ko
+lang: en
 permalink: /blog/sportshackathon/hackathon-dev
 draft: true 
 title:  "2018 불법 스포츠도박 근절 해커톤 후기"
