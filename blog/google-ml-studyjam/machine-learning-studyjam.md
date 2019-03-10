@@ -12,7 +12,7 @@ author: "Byeongsu Park"
 header-img : "img/google_ml_study_poster.png"
 post-header: true
 comments: true
-order: 2
+order: 3
 ---
 
 저번주 금요일인 8일에 구글에서 진행하는 스터디인 머신러닝 스터디잼을 신청했습니다.  
