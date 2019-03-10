@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-124434283-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+        gtag('config', 'UA-124434283-1');
+</script>
+
+
+  
+  <title>불법 스포츠도박 해커톤 수상작 개발기</title>
+    
+<!-- Post info -->
+
+  <meta property="og:site_name" content="Byeongsu Park">
+
+    <meta property="og:type"            content="article" /> 
+    <meta property="og:url"             content="https://byeongsupark.github.io/blog/sportshackathon/hackathon-dev" />
+    
+    <meta property="og:image" content="https://byeongsupark.github.io/blog/sportshackathon/hackathon-devimg/img.jpg">
+
+    <meta name="twitter:card" content="summary_large_image"> 
+    
+    <!-- title -->
+    <meta property="og:title" content="불법 스포츠도박 해커톤 수상작 개발기">
+    
+    
+    <!-- description -->
+    <meta property="og:description" content="# Overview * * * ![Poster](img/poster.jpg)  필자는 IT 관련 뉴스들을 자주 챙겨보는 편이다. 그래서 심심치 않게 해커톤 개최 또는 수상 기사를 접한다. 기사에 나와있던 수상자들의 사진을 보면 대단하다는 생각이..."/>
+
+    <!-- SEO for Polyglot -->
+    <meta http-equiv="Content-Language" content="en">
+<link rel="alternate" hreflang="ko" href=" https://byeongsupark.github.io/blog/sportshackathon/hackathon-dev"/>
+<link rel="alternate" hreflang="en" href="https://byeongsupark.github.io/en/blog/sportshackathon/hackathon-dev"/>
+
+    
+    
+  <!-- CSS -->
+  <link rel="stylesheet" href="/en/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700" rel="stylesheet">
+  <link rel="shortcut icon" href="http://www.jihyeleee.com/img/favicon.ico">
+    
+</head>
+
+
+  <body>
+      
+      <nav class="nav">
+        <div class="nav-container">
+            <ul>
+                <li class="transition">
+                    <a href="/en/"  class="normal"  class="active">Work</a>
+                </li>
+                <li class="transition">
+			<a href="/en/blog"  class="active" >Blog</a>
+                </li>
+                <li class="transition">
+                    <a href="/en/about"  >About</a>
+                </li>
+		
+                	<li id="lang" style="float: right;"><a style="text-align:center;" href=" /blog/sportshackathon/hackathon-dev ">ko</a>    
+			</li>
+	      	
+                	<li id="lang" style="float: right;"><a style="font-weight: bold;text-align:center;" href=" /en/blog/sportshackathon/hackathon-dev ">en</a>    
+			</li>
+	      	
+           </ul>
+	    </div>
+        </div>
+      </nav>
+      
+    
+    	<div class="post-header loading-animation" style="background-image: url('img/img.jpg')">
+</div>
+    
+    
+    
+   
+    <main>
+      <div class="post">
+    <div class="post-info">
+        <div class="post-type-tag">
+            
+            <div class="post-type">
+                hackathon
+            </div>
+        </div>
+        <h1 class="post-title">
+            불법 스포츠도박 해커톤 수상작 개발기
+        </h1>
+        <h2 class="post-subtitle">
+            우리는 어떻게 수백 개의 불법 도박 사이트들을 모니터링 했는가
+        </h2>
+  </div>
+    <h1 id="overview">Overview</h1>
+<hr />
+
+<p><img src="img/poster.jpg" alt="Poster" /></p>
+
+<p><br /></p>
+
+<p>필자는 IT 관련 뉴스들을 자주 챙겨보는 편이다. <br />
+   그래서 심심치 않게 해커톤 개최 또는 수상 기사를 접한다.<br />
+   기사에 나와있던 수상자들의 사진을 보면 대단하다는 생각이 든다.</p>
+
+<p>참신한 아이디어를 생각해내고,<br />
+   단기간 내에 결과물을 만들어 낸다는 것이 얼마나 어려운지 짐작도 가지 않아서였다.</p>
+
+<h1 id="목차">목차</h1>
+<hr />
+<p><a href="#기존-불법-도박-사이트-모니터링-방식">- 기존의 불법 도박 사이트 모니터링 방식 </a><br />
+   <a href="#아이디어">- 아이디어</a><br />
+   <a href="#개발">- 개발</a><br />
+          <a href="#딱-맞는-논문을-찾다">* 딱 맞는 논문을 찾다</a><br />
+   <a href="#수상">- 수상</a></p>
+
+<h1 id="기존-불법-도박-사이트-모니터링-방식">기존 불법 도박 사이트 모니터링 방식</h1>
+<hr />
+
+<p>우리팀은 4개의 주제중<br />
+  <strong>불법 도박 사이트의 효율적인 모니터링 방안</strong><br />
+  이라는 주제로 참가했다.</p>
+
+<p>그래서 기존의 모니터링 방식은 어떤지 알아보았는데 생각보다 수동적이었다.</p>
+
+<p>모니터링단과 같의 외부 협력을 통해 사람이 직접 찾거나,<br />
+  <a href="https://singo.ngcc.go.kr/notify/intro.do">불법사행산업감시신고센터</a>를 통해 들어온 신고를 <br />
+  담당자가 직접 모니터링 하는 방식이었다.</p>
+
+<p>두 방식 모두 사람이 하다 보니,<br />
+  당연히 그 효율은 낮을 수밖에 없어 보였다.</p>
+
+<p>더욱이 이렇게 모니터링을 통해 차단된 사이트들도,<br />
+  단속을 피하기 위해 도메인만 바꾸면 재접속이 가능했기에 어려움이 많아보였다.</p>
+
+<h1 id="아이디어">아이디어</h1>
+<hr />
+<p>우리는 도박 사이트들도 근본적으로 이용객을 모으기 위해서<br />
+  홍보를 해야 한다는 점에 주목했다.</p>
+
+<p>홍보를 한다는 것은 노출로 이어지고,<br />
+  노출은 곧 검색엔진에 랭크되는 결과로 이어진다.</p>
+
+<p>실제로 구글에 불법 도박과 연관된 키워드를 입력해본 결과,<br />
+  상위권에 랭크되는 다수의 사이트들을 볼 수 있었다.</p>
+
+<p>그 결과 크게 두 가지의 사이트 유형으로 구분할 수 있었다.</p>
+
+<ul>
+  <li>폐쇄적인 불법 도박 사이트</li>
+  <li>불법 도박 사이트를 홍보해주는 사이트<br />
+  <br /></li>
+</ul>
+
+<p>검색엔진에 랭크되어 있는 이러한 사이트들을 자동으로 탐지하는 소프트웨어를 만들어보기로 했다.</p>
+
+<h1 id="개발">개발</h1>
+<hr />
+<p>해당 사이트들을 어떻게 탐지할까?<br />
+  라는 질문에 다양한 후보들을 생각했다.<br />
+  그 중에는 딥러닝도 있었다.<br />
+  그러나 모두 무박 2일이라는 짧은 시간에는 구현이 어려워 보였다.</p>
+
+<p>무엇보다 딥러닝 기술자가 우리팀엔 없었고..</p>
+
+<p><img src="img/idea-meeting.gif" alt="idea-thinking" />
+  <del>고민이 많았던 우리들의 모습</del></p>
+
+<p>그렇게 아이디어를 생각하던 도중, 정말 우리에게 딱 맞는 논문을 찾을 수 있었다.</p>
+
+<h2 id="딱-맞는-논문을-찾다">딱 맞는 논문을 찾다</h2>
+<hr />
+<p>우리의 상황에 적용할 만한 기술이 없을까 하며 논문을 찾고 있을 때,<br />
+  한 논문이 내 시선을 붙잡았다.</p>
+
+<p><em><a href="https://ccs.korea.ac.kr/pds/KIISE16.pdf">HTML 태그 순서를 이용한 불법 사이트 탐지 자동화 기술</a></em></p>
+
+<p>단숨에 “이거다!” 라는 느낌이 왔다.<br />
+  바로 인쇄해서 읽어보았다.<br />
+  해당 논문은 불법 사이트 탐지에 다음과 같은 방법을 제시했다.<br />
+  의심되는 사이트와 불법 사이트간의 유사도를 계산하는데,   <br />
+  사이트의 HTML 태그 순서를 유사도 계산 파라미터로 이용한다는 것이다.</p>
+
+<p>논문에 나와있는 정확도를 봤을 때 이 정도면 괜찮다. 라고 생각했다.<br />
+  무엇보다 짧은 시간에도 충분히 구현이 가능해 보였다.</p>
+
+<p>팀원인 민영님도 긍정적인 반응을 보이셨기에,<br />
+  바로 해당 기능을 구현하기 시작했다.</p>
+
+<p>민영님은 외부 검색엔진과 연동부분을 구현하셨고,<br />
+  나는 해당 검색엔진에서 넘겨주는 의심사이트들을 기존에 등록된<br />
+  불법 사이트들과 유사도를 비교해주는 알고리즘을 구현했다.</p>
+
+<h1 id="수상">수상</h1>
+<hr />
+<p>첫 해커톤 참가였고 우리보다 뛰어난 팀들도 많았기에<br />
+  그닥 수상기대는 안했다.</p>
+
+<p>그런데 우리팀 이름이 불리더라.</p>
+
+<p><img src="img/award.jpg" alt="첫 해커톤 입상" />
+   <code class="highlighter-rouge">해당 사진은 행사 주최측 홈페이지에서 가져왔습니다</code></p>
+
+<p>다른 팀은 인원이 5~6 명 정도 되었는데,<br />
+   우리는 행사 끝까지 인원 충원이 안되서 2명이서 진행앴었다.<br />
+   덕분에 한 사람당 작업량이 많아서 피곤했지만, 즐거운 경험이었다.</p>
+
+<p>요즈음도 재밌는 해커톤이 없나 한 번씩 찾아보고 있다.<br />
+   수상팀 호명시에 불렸던 우리 팀의 이름.<br />
+   그 때 느꼈던 짜릿함은 앞으로도 잊지 못할 것 같다.</p>
+
+
+
+    
+
+    <div>
+    
+    <div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+   var disqus_config = function () {
+   this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+   this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+   };
+   */
+(function() { // DON'T EDIT BELOW THIS LINE
+	var d = document, s = d.createElement('script');
+	s.src = 'https://byeongsupark-github-io.disqus.com/embed.js';
+	s.setAttribute('data-timestamp', +new Date());
+	(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+    
+    </div>
+</div>
+
+        
+        
+      
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/ko_KR/sdk.js#xfbml=1&version=v2.10&appId=1607605225977118';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<script>window.twttr = (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0],
+        t = window.twttr || {};
+    if (d.getElementById(id)) return t;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "https://platform.twitter.com/widgets.js";
+    fjs.parentNode.insertBefore(js, fjs);
+    t._e = [];
+    t.ready = function(f) {
+        t._e.push(f);
+    };
+    return t;
+}(document, "script", "twitter-wjs"));</script>
+<section class="share transition">
+    <div class="share-twitter">
+        <a class="twitter-share-button" href="https://twitter.com/intent/tweet" data-size="large">Tweet</a>
+    </div>
+    <div class="share-facebook">
+        <div class="fb-share-button" data-href="https://byeongsupark.github.io/en/blog/sportshackathon/hackathon-dev" data-layout="button_count" data-size="large" data-mobile-iframe="true">
+            <a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">공유하기</a>
+        </div>
+    </div>
+</section>
+        
+
+      </main>
+      
+      <footer>
+    <address class="footer_wrap">
+        <div class="information">
+            <div class="myname">
+		Byeongsu Park
+            </div>
+            <a href="mailto:byonsu@gmail.com" class="email">
+                byonsu@gmail.com
+            </a>
+            <div class="accounts">
+                <a href="http://github.com/ByeongsuPark" target="_blank" class="transition">
+                    <svg viewBox="0 0 32.6 31.8">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M16.3,0C7.3,0,0,7.3,0,16.3c0,7.2,4.7,13.3,11.1,15.5
+                    c0.8,0.1,1.1-0.4,1.1-0.8c0-0.4,0-1.4,0-2.8c-4.5,1-5.5-2.2-5.5-2.2c-0.7-1.9-1.8-2.4-1.8-2.4c-1.5-1,0.1-1,0.1-1
+                    c1.6,0.1,2.5,1.7,2.5,1.7c1.5,2.5,3.8,1.8,4.7,1.4c0.1-1.1,0.6-1.8,1-2.2c-3.6-0.4-7.4-1.8-7.4-8.1c0-1.8,0.6-3.2,1.7-4.4
+                    C7.4,10.7,6.8,9,7.7,6.8c0,0,1.4-0.4,4.5,1.7c1.3-0.4,2.7-0.5,4.1-0.5c1.4,0,2.8,0.2,4.1,0.5c3.1-2.1,4.5-1.7,4.5-1.7
+                    c0.9,2.2,0.3,3.9,0.2,4.3c1,1.1,1.7,2.6,1.7,4.4c0,6.3-3.8,7.6-7.4,8c0.6,0.5,1.1,1.5,1.1,3c0,2.2,0,3.9,0,4.5
+                    c0,0.4,0.3,0.9,1.1,0.8c6.5-2.2,11.1-8.3,11.1-15.5C32.6,7.3,25.3,0,16.3,0z"></path>
+                    </svg>
+                </a>
+                <a href="http://www.linkedin.com/in/byeongsu-p-b3812b104" target="_blank" class="transition">
+                    <svg viewBox="0 0 38.3 38.3">
+                        <g>
+                        <rect x="0.8" y="12.8" width="7.9" height="25.5"></rect>
+                        <ellipse cx="4.7" cy="4.7" rx="4.7" ry="4.7"></ellipse>
+                        <path d="M21.3,24.9c0-3.6,1.7-5.7,4.8-5.7c2.9,0,4.3,2.1,4.3,5.7c0,3.7,0,13.4,0,13.4h7.9c0,0,0-9.3,0-16.2
+                        c0-6.8-3.9-10.1-9.3-10.1s-7.7,4.2-7.7,4.2v-3.4h-7.6v25.5h7.6C21.3,38.3,21.3,28.8,21.3,24.9z"></path>
+                            </g>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="copyright">
+            <span>
+                &copy; Byeongsu Park. <time datetime="2019-03-10 22:44:03 +0900">2019</time>
+            </span>
+        </div>    
+    </address>
+</footer>
+
+
+   
+  </body>
+</html>
