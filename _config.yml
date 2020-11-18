@@ -4,7 +4,7 @@ permalink:      /:year-:month-:day/:title
 # Setup
 title:          Byeongsu Park
 baseurl:        ""
-url:            https://byeongsupark.github.io 
+url:            "https://byeongsupark.github.io"
 
 # Assets
 sass:
