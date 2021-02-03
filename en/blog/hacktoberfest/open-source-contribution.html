@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-124434283-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+        gtag('config', 'UA-124434283-1');
+</script>
+
+
+  
+  <title>Hacktoberfest로 시작하는 오픈소스 입문기</title>
+    
+<!-- Post info -->
+
+  <meta property="og:site_name" content="Byeongsu Park">
+
+    <meta property="og:type"            content="article" /> 
+    <meta property="og:url"             content="https://byeongsupark.github.io/blog/hacktoberfest/open-source-contribution" />
+    
+    <meta property="og:image" content="https://byeongsupark.github.io/blog/hacktoberfest/open-source-contributionimg/hacktoberfest.jpeg">
+
+    <meta name="twitter:card" content="summary_large_image"> 
+    
+    <!-- title -->
+    <meta property="og:title" content="Hacktoberfest로 시작하는 오픈소스 입문기">
+    
+    
+    <!-- description -->
+    <meta property="og:description" content="# 멀게만 느껴졌던 오픈소스 ![](https://images.velog.io/images/ps3011/post/2b3a85bc-8ffe-4e6c-b2ae-bfe9f7918be3/contribute.png) 오픈소스 컨트리뷰션에는 다양한 방식이 있다. 오타 고치기 등 문서화(Documentation)에 기여하는 방법도 있고, 열린 이슈에서 사람들의 질문에 답변해주는 방법도 있다. 물론 코드로 기여하는 방법도 있으나, 뭔가..."/>
+
+    <!-- SEO for Polyglot -->
+    <meta http-equiv="Content-Language" content="en">
+<link rel="alternate" hreflang="ko" href=" https://byeongsupark.github.io/blog/hacktoberfest/open-source-contribution"/>
+<link rel="alternate" hreflang="en" href="https://byeongsupark.github.io/en/blog/hacktoberfest/open-source-contribution"/>
+ 
+    
+    
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700" rel="stylesheet">
+  <link rel="shortcut icon" href="http://www.jihyeleee.com/img/favicon.ico">
+    
+</head>
+
+
+  <body>
+      
+      <nav class="nav">
+        <div class="nav-container">
+            <ul>
+                <li class="transition">
+                    <a href="/en/"  class="normal"  class="active">About</a>
+                </li>
+                <li class="transition">
+			<a href="/en/blog"  class="active" >Blog</a>
+                </li>
+		
+                	<li id="lang" style="float: right;"><a style="text-align:center;" href=" /blog/hacktoberfest/open-source-contribution ">ko</a>    
+			</li>
+	      	
+                	<li id="lang" style="float: right;"><a style="font-weight: bold;text-align:center;" href=" /en/blog/hacktoberfest/open-source-contribution ">en</a>    
+			</li>
+	      	
+           </ul>
+	    </div>
+        </div>
+      </nav>
+      
+    
+    	<div class="post-header loading-animation" style="background-image: url('img/hacktoberfest.jpeg')">
+</div>
+    
+    
+    
+   
+    <main>
+      <div class="post">
+    <div class="post-info">
+        <div class="post-type-tag">
+            
+            <div class="post-type">
+                Open Source
+            </div>
+        </div>
+        <h1 class="post-title">
+            Hacktoberfest로 시작하는 오픈소스 입문기
+        </h1>
+        <h2 class="post-subtitle">
+            feat.Mattermost
+        </h2>
+  </div>
+    <h1 id="멀게만-느껴졌던-오픈소스">멀게만 느껴졌던 오픈소스</h1>
+
+<p><img src="https://images.velog.io/images/ps3011/post/2b3a85bc-8ffe-4e6c-b2ae-bfe9f7918be3/contribute.png" alt="" />
+오픈소스 컨트리뷰션에는 다양한 방식이 있다.<br />
+오타 고치기 등 문서화(Documentation)에 기여하는 방법도 있고,<br />
+	열린 이슈에서 사람들의 질문에 답변해주는 방법도 있다.<br />
+	물론 코드로 기여하는 방법도 있으나, 뭔가 각잡고 해야되서 약간 부담되는 느낌이랄까..<br />
+	그래서 나는 주로 오타 고치기, 기능 요청 등으로만 기여를 해왔었다.<br />
+	<del>즉 코드로는 기여를 한 적이 없었다.</del><br />
+	이번에는 한 번 코드로 기여해보자하는 생각이 들어서, 겸사겸사 핵토버페스트에 참가했다.<br />
+	그 경험을 공유해 보려 한다.</p>
+
+<h1 id="오픈소스와-핵토버페스트">오픈소스와 핵토버페스트</h1>
+<p>핵토버페스트는 이름에서도 알 수 있듯, 매년 10월 한 달 동안 열리는 행사이다.<br />
+취지는 오픈소스 기여를 장려하는 것인데, 행사 등록을 마친 후에 핵토버페스트 참가 의사를 표시한 프로젝트에 4개의 PR을 보내고 해당 PR이 성공적으로 승인되면 아래와 같은 티셔츠를 주는 행사다.<br />
+	<img src="https://images.velog.io/images/ps3011/post/f76f52fa-5dbb-41af-ab98-71401ab9709c/7bpu9vtmpv0ka8kpmyso%20(1).jpg" alt="hacktoberfest-tshirt" /><br />
+	올해만 그런지는 모르겠는데, 티셔츠 받는 대신 나무 심겠냐고 물어보더라.</p>
+<h1 id="코드로써의-첫-기여-시작하기">코드로써의 첫 기여 시작하기</h1>
+<h2 id="기여할만한-레포-찾기">기여할만한 레포 찾기</h2>
+<p>이번 핵토버페스트는 <a href="https://www.hacktoberfestkorea.com/hacktoberfest_spam_update/">스팸 이슈</a>로 인해 hacktoberfest 참가 의사를 표시한 저장소에 PR을 날려야 인정됐다.<br />
+해당 참가의사를 표시한 저장소는 <a href="https://github.com/topics/hacktoberfest">다음 링크</a>에서 확인이 가능하다.</p>
+
+<p>나는 저장소를 고르면서 다음과 같은 기준으로 살펴 봤다.</p>
+
+<ul>
+  <li>내가 사용하는 언어인지</li>
+  <li><strong>커뮤니티가 활발한지</strong></li>
+  <li>프로젝트가 재미있어 보이는지</li>
+</ul>
+
+<p>그 중에서도 두번째 기준을 가장 중요하게 두고 찾아봤던 것 같다.<br />
+필자는 그러다가 <a href="https://github.com/mattermost">Mattermost</a>라는 프로젝트를 알게 되었다. <br />
+<img src="https://images.velog.io/images/ps3011/post/baf9360d-dc11-4d15-a587-e0c2fce9c621/%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C.png" alt="mattermost" />
+Mattermost는 슬랙의 대체제를 표방하고 나선 오픈소스 메시지 프로젝트이다.<br />
+회사의 활발한 커뮤니티 문화에 대해서도 할 말이 많지만, 
+너무 길어질 것 같아 더 궁금하신 분은 <a href="https://blog.cometkim.kr/posts/mattermost-contribution/introduction-to-mattermost/">혜성님의 블로그</a>를 들어가보길 추천한다.</p>
+
+<p>서버나 플러그인은 Go로 작성되어 있는데, 이전에 Go를 잠깐 만져본적이 있어서 플러그인에 기여하기로 결정했다.</p>
+
+<p><a href="https://github.com/mattermost/mattermost-webapp">웹앱</a>은 자바스크립트로, <a href="https://github.com/mattermost/mattermost-mobile">모바일</a>은 리액트는 네이티브를 사용하는 것 같으니, 관심있으신 분들은 확인해보시길 바란다.</p>
+
+<h2 id="적합한-난이도의-이슈-찾기">적합한 난이도의 이슈 찾기</h2>
+<p>Mattermost 레포들의 이슈를 보면서 느낀 점이 라벨링이 체계적으로 잘되어 있다는 것이었다.
+<img src="https://images.velog.io/images/ps3011/post/f77956d0-c07b-4802-8711-d8ec33305184/%EC%9D%B4%EC%8A%88%20%ED%8A%B8%EB%9E%98%EC%BB%A4.JPG" alt="" /></p>
+
+<p><code class="highlighter-rouge">Tech/Go</code>, <code class="highlighter-rouge">Tech/React Native</code> 등 기술 스택별로,
+<code class="highlighter-rouge">Difficulty/1:Easy</code>, <code class="highlighter-rouge">Difficulty/2:Medium</code> 등 난이도 별로 정리가 잘 되어 있다.
+처음 기여하는 사람이 해결하기 좋은 이슈도 <code class="highlighter-rouge">Good first issue</code> 로 라벨링 해놓아서 
+이슈 필터링만 할 수 있다면 초보자도 기여하기가 쉽다.</p>
+
+<h2 id="내가-해결해볼게">내가 해결해볼게!!!</h2>
+<p>위의 사진에서 아래에서 세번째 이슈를 보면 <code class="highlighter-rouge">Up For Grabs</code>라고 라벨링되어 있는 것을 볼 수 있다.
+아직 아무도 해당 이슈를 맡지 않았다는 것을 의미하는데,<br />
+이런 경우 내가 해보겠다고 Assign 요청을 하면 된다.
+<img src="https://images.velog.io/images/ps3011/post/ff014d47-915c-4ffc-8a00-3c4941bcb573/%EC%96%B4%EC%8B%B8%EC%9D%B8%EC%9A%94%EC%B2%AD.JPG" alt="" /></p>
+
+<p>그러면 메인테이너가 곧 확인을 하고 Assign을 시켜줄 것이다.
+<img src="https://images.velog.io/images/ps3011/post/3b4f25ef-ad84-4671-903b-e45acf7fa460/%E3%85%87%E3%85%87%E3%85%87.JPG" alt="" /></p>
+
+<p>해당 이슈에 Assign 됐다면 이제 해당 이슈를 해결해자!</p>
+
+<h2 id="pr-보내기-리뷰-그리고-merged">PR 보내기, 리뷰 그리고 Merged</h2>
+<p>고맙게도 메인테이너가 비슷한 사례의 PR을 링크해줬다.
+덕분에 해당 PR의 코드를 참고해서 어떻게 코드를 수정해야 하는지 결정 할 수 있었다.<br />
+그렇게 해당 이슈를 해결하고 커밋 후 PR을 날리면 이제 리뷰 시간이다.<br />
+Mattermost같은 경우는 Dev 리뷰, QA 리뷰 순으로 진행된다.</p>
+
+<p>그렇게 리뷰가 정상적으로 끝나게 된다면,,,,</p>
+
+<p><img src="https://images.velog.io/images/ps3011/post/c385e31b-d9ef-4eae-a17b-d590b98ef553/%EC%BA%A1%EC%B2%98.JPG" alt="" /></p>
+
+<p>짠!!! 드디어 PR이 성공적으로 반영됐다.</p>
+
+<p>활발한 커뮤니티와 친절한 메인테이너들 덕분에 이 PR을 시작으로 해서 나머지 3개의 PR도 
+어렵지 않게 머지됐다.</p>
+
+<h1 id="핵토버페스트를-마치며">핵토버페스트를 마치며</h1>
+
+<p>오픈소스 활동 하시는 분들을 보면 입문하게 된 다양한 경로가 있다.<br />
+어떤 분은 평소 회사에 쓰는 오픈소스에서 개선점을 찾아서 해결하다보니 자연스럽게 입문하게 된 분도 계시고,그냥 기여 자체를 즐겨서 하는 분들 등 참 다양한 분들이 계신다.<br />
+개인적으로 이런 재밌는 행사를 통해서 오픈소스를 시작 해보는 것도 괜찮은 것 같다.<br />
+올해 10월 또한 나는 핵토버페스트와 함께 보낼 것 같다.</p>
+
+<p>+++)
+<img src="https://images.velog.io/images/ps3011/post/337877d4-0704-4430-8371-a1c7e8516248/shipping.png" alt="" />
+행사가 끝난지 3개월이 지난 최근에 들어서야 티셔츠를 보냈다는 이메일이 왔다.<br />
+이전 참가 후기들을 보면, 대략 1~2달이면 도착했다고 한다.<br />
+아마 코로나로 인해 지연되지 않았나 싶다.</p>
+
+
+
+    
+
+    <div>
+    
+    <div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+   var disqus_config = function () {
+   this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+   this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+   };
+   */
+(function() { // DON'T EDIT BELOW THIS LINE
+	var d = document, s = d.createElement('script');
+	s.src = 'https://byeongsupark-github-io.disqus.com/embed.js';
+	s.setAttribute('data-timestamp', +new Date());
+	(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+    
+    </div>
+</div>
+
+        
+        
+      
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/ko_KR/sdk.js#xfbml=1&version=v2.10&appId=1607605225977118';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<script>window.twttr = (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0],
+        t = window.twttr || {};
+    if (d.getElementById(id)) return t;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "https://platform.twitter.com/widgets.js";
+    fjs.parentNode.insertBefore(js, fjs);
+    t._e = [];
+    t.ready = function(f) {
+        t._e.push(f);
+    };
+    return t;
+}(document, "script", "twitter-wjs"));</script>
+<section class="share transition">
+    <div class="share-twitter">
+        <a class="twitter-share-button" href="https://twitter.com/intent/tweet" data-size="large">Tweet</a>
+    </div>
+    <div class="share-facebook">
+        <div class="fb-share-button" data-href="https://byeongsupark.github.io/en/blog/hacktoberfest/open-source-contribution" data-layout="button_count" data-size="large" data-mobile-iframe="true">
+            <a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">공유하기</a>
+        </div>
+    </div>
+</section>
+        
+
+      </main>
+      
+      <footer>
+    <address class="footer_wrap">
+        <div class="information">
+            <div class="myname">
+		Byeongsu Park
+            </div>
+            <a href="mailto:byonsu@gmail.com" class="email">
+                byonsu@gmail.com
+            </a>
+            <div class="accounts">
+                <a href="http://github.com/ByeongsuPark" target="_blank" class="transition">
+                    <svg viewBox="0 0 32.6 31.8">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M16.3,0C7.3,0,0,7.3,0,16.3c0,7.2,4.7,13.3,11.1,15.5
+                    c0.8,0.1,1.1-0.4,1.1-0.8c0-0.4,0-1.4,0-2.8c-4.5,1-5.5-2.2-5.5-2.2c-0.7-1.9-1.8-2.4-1.8-2.4c-1.5-1,0.1-1,0.1-1
+                    c1.6,0.1,2.5,1.7,2.5,1.7c1.5,2.5,3.8,1.8,4.7,1.4c0.1-1.1,0.6-1.8,1-2.2c-3.6-0.4-7.4-1.8-7.4-8.1c0-1.8,0.6-3.2,1.7-4.4
+                    C7.4,10.7,6.8,9,7.7,6.8c0,0,1.4-0.4,4.5,1.7c1.3-0.4,2.7-0.5,4.1-0.5c1.4,0,2.8,0.2,4.1,0.5c3.1-2.1,4.5-1.7,4.5-1.7
+                    c0.9,2.2,0.3,3.9,0.2,4.3c1,1.1,1.7,2.6,1.7,4.4c0,6.3-3.8,7.6-7.4,8c0.6,0.5,1.1,1.5,1.1,3c0,2.2,0,3.9,0,4.5
+                    c0,0.4,0.3,0.9,1.1,0.8c6.5-2.2,11.1-8.3,11.1-15.5C32.6,7.3,25.3,0,16.3,0z"></path>
+                    </svg>
+                </a>
+                <a href="http://www.linkedin.com/in/byeongsu-p-b3812b104" target="_blank" class="transition">
+                    <svg viewBox="0 0 38.3 38.3">
+                        <g>
+                        <rect x="0.8" y="12.8" width="7.9" height="25.5"></rect>
+                        <ellipse cx="4.7" cy="4.7" rx="4.7" ry="4.7"></ellipse>
+                        <path d="M21.3,24.9c0-3.6,1.7-5.7,4.8-5.7c2.9,0,4.3,2.1,4.3,5.7c0,3.7,0,13.4,0,13.4h7.9c0,0,0-9.3,0-16.2
+                        c0-6.8-3.9-10.1-9.3-10.1s-7.7,4.2-7.7,4.2v-3.4h-7.6v25.5h7.6C21.3,38.3,21.3,28.8,21.3,24.9z"></path>
+                            </g>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="copyright">
+            <span>
+                &copy; Byeongsu Park. <time datetime="2021-02-03 16:12:13 +0900">2021</time>
+            </span>
+        </div>    
+    </address>
+</footer>
+
+
+   
+  </body>
+</html>
